@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>学习专栏 | 计算机基础</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>📚 学习专栏</h1>
+    <nav>
+      <a href="../index.html">首页</a>
+      <a href="learning.html">学习专栏</a>
+      <a href="resources.html">学习资源</a>
+      <a href="projects.html">个人项目</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>🧱 计算机基础四大件</h2>
+      <ul>
+        <li><strong>数据结构与算法</strong>：数组、链表、栈队列、树、图、排序、查找</li>
+        <li><strong>计算机网络</strong>：TCP/IP、HTTP、三次握手、常见协议</li>
+        <li><strong>操作系统</strong>：进程线程、内存管理、文件系统</li>
+        <li><strong>计算机组成原理</strong>：CPU、缓存、指令执行流程</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>💻 编程与工具链</h2>
+      <ul>
+        <li><strong>C++</strong>：语法、STL、面向对象、刷题</li>
+        <li><strong>Python</strong>：脚本、数据处理、AI 入门</li>
+        <li><strong>Linux</strong>：常用命令、Shell、进程管理</li>
+        <li><strong>Git</strong>：版本控制、GitHub 协作</li>
+        <li><strong>HTML/CSS</strong>：静态网页、个人网站</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>📝 示例：C++（链表反转）</h2>
+      <pre><code>
+ListNode* reverseList(ListNode* head) {
+    ListNode* prev = nullptr;
+    while (head) {
+        auto next = head->next;
+        head->next = prev;
+        prev = head;
+        head = next;
+    }
+    return prev;
+}
+      </code></pre>
+    </section>
+  </main>
+</body>
+</html>
